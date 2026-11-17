@@ -17,7 +17,7 @@ fi
 # buildpacks (so will not interfere with the real Ruby buildpack, if that's run later).
 if ! command -v ruby &> /dev/null; then
   echo "-----> Ruby installation not found, temporarily installing Ruby for use by this buildpack"
-  ruby_version="3.3.10"
+  ruby_version="4.0.9"
   # Heroku-24 and later publish a build per architecture; Heroku-22 has one.
   case "${STACK}" in
     heroku-22) ruby_path="${STACK}" ;;
